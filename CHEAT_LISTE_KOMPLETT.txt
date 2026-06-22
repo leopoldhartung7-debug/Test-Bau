@@ -1,0 +1,2414 @@
+=====================================================================
+  VOLLSTÄNDIGE CHEAT-SIGNATUR-LISTE
+  FiveM | RageMP | alt:V
+  Version 1.0 | Stand: 2026-06-22
+=====================================================================
+
+=====================================================================
+                          [ FiveM ]
+=====================================================================
+
+=====================================
+CHEAT: Eulen
+Platform: FiveM
+Type: Menu (ESP, Aimbot, Teleport, Godmode, Fahrzeuge)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  eulen.exe
+  eulen_loader.exe
+  eulen_client.exe
+
+MODULE (DLLs):
+  eulen.dll
+  eulen_core.dll
+  eulen_hook.dll
+
+FENSTER-TITEL:
+  "Eulen"              | Class: EulenWnd    | Overlay: Nein
+  "Eulen Cheats"       | Class: EulenWnd    | Overlay: Nein
+  "Eulen Client"       | Class: -           | Overlay: Nein
+  "Eulen Overlay"      | Class: -           | Overlay: Ja
+
+MUTEX:
+  EulenMutex
+  Global\EulenSingle
+  EulenClientMutex
+
+NAMED PIPES:
+  \\.\pipe\eulen
+  \\.\pipe\eulen_client
+
+STRINGS (Memory / Export / GUI):
+  "Eulen"              [Watermark]
+  "EulenCheats"        [General]
+  "eulen.pw"           [Network Agent]
+  "Eulen v"            [Watermark - Versions-Prefix]
+  "Eulen Loaded"       [Debug String]
+  "EulenESP"           [Class Name]
+  "EulenAimbot"        [Class Name]
+  "EulenInit"          [Export Name]
+  "Initialize"         [Export Name]
+
+DATEIPFADE:
+  %APPDATA%\Eulen\
+  %APPDATA%\Eulen\config.json
+  %TEMP%\eulen_*
+
+REGISTRY:
+  HKCU\Software\Eulen  ->  License
+  HKCU\Software\Eulen  ->  Version
+
+NETZWERK (Domains):
+  eulen.pw
+  auth.eulen.pw
+  cdn.eulen.pw
+=====================================
+
+=====================================
+CHEAT: Lynx
+Platform: FiveM
+Type: Menu (ESP, Aimbot, Godmode)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  lynx.exe
+  lynx_loader.exe
+
+MODULE (DLLs):
+  lynx.dll
+  lynx_core.dll
+
+FENSTER-TITEL:
+  "Lynx"              | Class: LynxWnd  | Overlay: Nein
+  "Lynx Client"       | Class: -        | Overlay: Nein
+  "Lynx Menu"         | Class: -        | Overlay: Ja
+
+MUTEX:
+  LynxMutex
+  Global\LynxSingle
+
+NAMED PIPES:
+  \\.\pipe\lynx
+
+STRINGS:
+  "Lynx"              [Watermark]
+  "LynxCheats"        [General]
+  "lynxcheats.net"    [Network Agent]
+  "Lynx v"            [Watermark]
+  "LynxLoaded"        [Debug String]
+  "LynxInit"          [Export Name]
+
+DATEIPFADE:
+  %APPDATA%\Lynx\
+  %APPDATA%\Lynx\config.json
+  %TEMP%\lynx_*
+
+REGISTRY:
+  HKCU\Software\LynxCheats  ->  Token
+
+NETZWERK:
+  lynxcheats.net
+  auth.lynxcheats.net
+=====================================
+
+=====================================
+CHEAT: Midnight
+Platform: FiveM
+Type: Menu (ESP, Teleport, Fahrzeuge)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  midnight.exe
+  midnight_loader.exe
+
+MODULE (DLLs):
+  midnight.dll
+  midnight_core.dll
+
+FENSTER-TITEL:
+  "Midnight"          | Class: MidnightWnd | Overlay: Nein
+  "Midnight Menu"     | Class: -           | Overlay: Ja
+  "Midnight Cheats"   | Class: -           | Overlay: Nein
+
+MUTEX:
+  MidnightMutex
+  Global\MidnightSingle
+
+NAMED PIPES:
+  \\.\pipe\midnight
+
+STRINGS:
+  "Midnight"          [Watermark]
+  "MidnightCheats"    [General]
+  "midnight-cheats"   [Network Agent]
+  "Midnight v"        [Watermark]
+  "MidnightESP"       [Class Name]
+  "MidnightMenu"      [GUI Label]
+  "MidnightInit"      [Export Name]
+
+DATEIPFADE:
+  %APPDATA%\Midnight\
+  %APPDATA%\Midnight\config.json
+  %TEMP%\midnight_*
+
+REGISTRY:
+  HKCU\Software\Midnight  ->  Config
+
+NETZWERK:
+  midnight-cheats.com
+=====================================
+
+=====================================
+CHEAT: RedEngine
+Platform: FiveM
+Type: Menu (Anti-Detection, ESP, Aimbot)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  redengine.exe
+  red_engine_loader.exe
+  re_launcher.exe
+
+MODULE (DLLs):
+  redengine.dll
+  rengine.dll
+  re_core.dll
+
+FENSTER-TITEL:
+  "RedEngine"         | Class: RedEngineWnd | Overlay: Nein
+  "Red Engine"        | Class: -            | Overlay: Nein
+  "RE Overlay"        | Class: -            | Overlay: Ja
+
+MUTEX:
+  RedEngineMutex
+  Global\RedEngine
+  RE_Single
+
+NAMED PIPES:
+  \\.\pipe\redengine
+  \\.\pipe\re_client
+
+STRINGS:
+  "RedEngine"         [Watermark]
+  "Red Engine"        [Watermark]
+  "red-engine"        [Network Agent]
+  "RE_Init"           [Export Name]
+  "REVersion"         [Config Key]
+  "RedEngine v"       [Watermark]
+  "RE_Loaded"         [Debug String]
+  "RECore"            [Class Name]
+
+DATEIPFADE:
+  %APPDATA%\RedEngine\
+  %APPDATA%\RedEngine\config.json
+  %TEMP%\re_*
+
+REGISTRY:
+  HKCU\Software\RedEngine  ->  License
+
+NETZWERK:
+  redengine.xyz
+  auth.redengine.xyz
+=====================================
+
+=====================================
+CHEAT: Hammafia
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  hammafia.exe
+  hammafia_loader.exe
+
+MODULE (DLLs):
+  hammafia.dll
+  hammafia_core.dll
+
+FENSTER-TITEL:
+  "Hammafia"          | Class: HammafiaWnd | Overlay: Nein
+  "Hammafia Menu"     | Class: -           | Overlay: Ja
+
+MUTEX:
+  HammafiaM
+  Global\HammafiaSingle
+
+STRINGS:
+  "Hammafia"          [Watermark]
+  "hammafia.com"      [Network Agent]
+  "HM_Loaded"         [Debug String]
+  "HammafiaInit"      [Export Name]
+  "Hammafia v"        [Watermark]
+
+DATEIPFADE:
+  %APPDATA%\Hammafia\
+  %TEMP%\hammafia_*
+
+NETZWERK:
+  hammafia.com
+  auth.hammafia.com
+=====================================
+
+=====================================
+CHEAT: NFIVE (NoFiveM)
+Platform: FiveM
+Type: Bypass / Launcher
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  nfive.exe
+  nofivem.exe
+  nfive_launcher.exe
+
+MODULE (DLLs):
+  nfive_hook.dll
+  cfx_bypass.dll
+
+FENSTER-TITEL:
+  "NFIVE"             | Class: -  | Overlay: Nein
+  "NoFiveM"           | Class: -  | Overlay: Nein
+  "NFIVE Launcher"    | Class: -  | Overlay: Nein
+
+MUTEX:
+  NFIVEMutex
+  Global\NFIVESingle
+
+STRINGS:
+  "NFIVE"             [Watermark]
+  "nfive"             [General - case insensitive]
+  "NoFiveM"           [General]
+  "CitizenFX_bypass"  [General]
+  "bypass_cfx"        [General]
+  "cfx_bypass"        [General]
+  "NFIVE_Init"        [Export Name]
+
+DATEIPFADE:
+  %TEMP%\nfive_*
+  %APPDATA%\NFIVE\
+
+NETZWERK:
+  nfive.net
+=====================================
+
+=====================================
+CHEAT: Oxiware
+Platform: FiveM
+Type: Menu (Teleport, Spieler-Hacks, ESP)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  oxiware.exe
+  oxi_loader.exe
+
+MODULE (DLLs):
+  oxiware.dll
+  oxi_core.dll
+
+FENSTER-TITEL:
+  "Oxiware"           | Class: OxiwareWnd | Overlay: Nein
+  "Oxi"               | Class: -          | Overlay: Ja
+  "Oxiware Menu"      | Class: -          | Overlay: Ja
+
+MUTEX:
+  OxiwareMutex
+  Global\OxiSingle
+
+NAMED PIPES:
+  \\.\pipe\oxiware
+
+STRINGS:
+  "Oxiware"           [Watermark]
+  "oxiware.com"       [Network Agent]
+  "OxiInit"           [Export Name]
+  "Oxiware v"         [Watermark]
+  "OxiESP"            [Class Name]
+
+DATEIPFADE:
+  %APPDATA%\Oxiware\
+  %TEMP%\oxi_*
+
+REGISTRY:
+  HKCU\Software\Oxiware  ->  Token
+
+NETZWERK:
+  oxiware.com
+  auth.oxiware.com
+=====================================
+
+=====================================
+CHEAT: Stellar
+Platform: FiveM
+Type: Menu (Subscription-basiert)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  stellar.exe
+  stellar_loader.exe
+  stellar_client.exe
+
+MODULE (DLLs):
+  stellar.dll
+  stellar_core.dll
+
+FENSTER-TITEL:
+  "Stellar"           | Class: -  | Overlay: Nein
+  "Stellar Menu"      | Class: -  | Overlay: Ja
+  "StellarFiveM"      | Class: -  | Overlay: Nein
+
+MUTEX:
+  StellarMutex
+  Global\StellarSingle
+
+STRINGS:
+  "Stellar"           [Watermark]
+  "StellarFiveM"      [General]
+  "StellarInit"       [Export Name]
+  "Stellar v"         [Watermark]
+  "stellarcheats.net" [Network Agent]
+
+DATEIPFADE:
+  %APPDATA%\Stellar\
+  %TEMP%\stellar_*
+
+REGISTRY:
+  HKCU\Software\Stellar  ->  License
+
+NETZWERK:
+  stellarcheats.net
+  auth.stellarcheats.net
+=====================================
+
+=====================================
+CHEAT: Frostbite
+Platform: FiveM
+Type: Menu (ESP, Aimbot)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  frostbite.exe
+  frostbite_loader.exe
+
+MODULE (DLLs):
+  frostbite.dll
+  frost_core.dll
+
+FENSTER-TITEL:
+  "Frostbite"         | Class: -  | Overlay: Nein
+  "Frostbite Menu"    | Class: -  | Overlay: Ja
+
+MUTEX:
+  FrostbiteMutex
+  Global\FrostSingle
+
+STRINGS:
+  "Frostbite"         [Watermark]
+  "FrostbiteESP"      [Class Name]
+  "FrostbiteInit"     [Export Name]
+  "Frostbite v"       [Watermark]
+  "frost_hook"        [General]
+
+DATEIPFADE:
+  %APPDATA%\Frostbite\
+  %TEMP%\frost_*
+
+NETZWERK:
+  frostbite-cheats.com
+=====================================
+
+=====================================
+CHEAT: Hydra
+Platform: FiveM
+Type: Menu (Fahrzeug, Spieler-Hacks)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  hydra.exe
+  hydra_loader.exe
+
+MODULE (DLLs):
+  hydra.dll
+  hydra_core.dll
+
+FENSTER-TITEL:
+  "Hydra"             | Class: -  | Overlay: Nein
+  "Hydra Menu"        | Class: -  | Overlay: Ja
+  "HydraFiveM"        | Class: -  | Overlay: Nein
+
+MUTEX:
+  HydraMutex
+  Global\HydraSingle
+
+STRINGS:
+  "Hydra"             [Watermark]
+  "HydraFiveM"        [General]
+  "HydraMenu"         [GUI Label]
+  "HydraInit"         [Export Name]
+  "Hydra v"           [Watermark]
+
+DATEIPFADE:
+  %APPDATA%\Hydra\
+  %TEMP%\hydra_*
+
+NETZWERK:
+  hydra-cheats.net
+=====================================
+
+=====================================
+CHEAT: Eclipse
+Platform: FiveM
+Type: Menu / Overlay (ESP)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  eclipse.exe
+  eclipse_loader.exe
+
+MODULE (DLLs):
+  eclipse.dll
+  eclipse_core.dll
+
+FENSTER-TITEL:
+  "Eclipse"           | Class: -  | Overlay: Nein
+  "Eclipse Menu"      | Class: -  | Overlay: Ja
+
+MUTEX:
+  EclipseMutex
+  Global\EclipseSingle
+
+STRINGS:
+  "Eclipse"           [Watermark]
+  "EclipseESP"        [Class Name]
+  "EclipseInit"       [Export Name]
+  "Eclipse v"         [Watermark]
+
+DATEIPFADE:
+  %APPDATA%\Eclipse\
+  %TEMP%\eclipse_*
+
+NETZWERK:
+  eclipse-cheats.net
+=====================================
+
+=====================================
+CHEAT: Flawless
+Platform: FiveM
+Type: Menu (Paid)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  flawless.exe
+  flawless_loader.exe
+
+MODULE (DLLs):
+  flawless.dll
+
+FENSTER-TITEL:
+  "Flawless"          | Class: -  | Overlay: Nein
+  "Flawless Menu"     | Class: -  | Overlay: Ja
+
+MUTEX:
+  FlawlessMutex
+
+STRINGS:
+  "Flawless"          [Watermark]
+  "FlawlessInit"      [Export Name]
+  "Flawless v"        [Watermark]
+
+DATEIPFADE:
+  %APPDATA%\Flawless\
+  %TEMP%\flawless_*
+
+NETZWERK:
+  flawless-cheats.com
+=====================================
+
+=====================================
+CHEAT: Haze
+Platform: FiveM
+Type: Menu (Paid)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  haze.exe
+  haze_loader.exe
+
+MODULE (DLLs):
+  haze.dll
+  haze_core.dll
+
+FENSTER-TITEL:
+  "Haze"              | Class: -  | Overlay: Nein
+  "Haze Menu"         | Class: -  | Overlay: Ja
+
+MUTEX:
+  HazeMutex
+
+STRINGS:
+  "Haze"              [Watermark]
+  "HazeCheats"        [General]
+  "HazeInit"          [Export Name]
+  "Haze v"            [Watermark]
+
+NETZWERK:
+  hazecheats.net
+=====================================
+
+=====================================
+CHEAT: Skulled
+Platform: FiveM
+Type: Menu (ESP, Aimbot, Godmode)
+Paid: Ja
+Status: Teilweise inaktiv (erkannt)
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  skulled.exe
+  skulled_loader.exe
+
+MODULE (DLLs):
+  skulled.dll
+  skulled_core.dll
+
+FENSTER-TITEL:
+  "Skulled"           | Class: -  | Overlay: Nein
+  "Skulled Menu"      | Class: -  | Overlay: Ja
+
+MUTEX:
+  SkulledMutex
+  Global\SkulledSingle
+
+STRINGS:
+  "Skulled"           [Watermark]
+  "SkulledESP"        [Class Name]
+  "SkulledInit"       [Export Name]
+  "Skulled v"         [Watermark]
+  "skulled-cheats"    [Network Agent]
+
+DATEIPFADE:
+  %APPDATA%\Skulled\
+  %TEMP%\skulled_*
+
+NETZWERK:
+  skulled-cheats.com
+=====================================
+
+=====================================
+CHEAT: Prestige
+Platform: FiveM
+Type: Menu (Paid)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  prestige.exe
+  prestige_loader.exe
+
+MODULE (DLLs):
+  prestige.dll
+
+FENSTER-TITEL:
+  "Prestige"          | Class: -  | Overlay: Nein
+  "Prestige Cheats"   | Class: -  | Overlay: Nein
+  "Prestige Menu"     | Class: -  | Overlay: Ja
+
+MUTEX:
+  PrestigeMutex
+
+STRINGS:
+  "Prestige"          [Watermark]
+  "PrestigeCheats"    [General]
+  "PrestigeInit"      [Export Name]
+  "Prestige v"        [Watermark]
+
+NETZWERK:
+  prestige-cheats.net
+=====================================
+
+=====================================
+CHEAT: Noire
+Platform: FiveM
+Type: Menu (Overlay)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  noire.exe
+  noire_loader.exe
+
+MODULE (DLLs):
+  noire.dll
+
+FENSTER-TITEL:
+  "Noire"             | Class: -  | Overlay: Ja
+  "Noire Menu"        | Class: -  | Overlay: Ja
+
+MUTEX:
+  NoireMutex
+
+STRINGS:
+  "Noire"             [Watermark]
+  "NoireESP"          [Class Name]
+  "NoireInit"         [Export Name]
+  "Noire v"           [Watermark]
+
+NETZWERK:
+  noire-cheats.com
+=====================================
+
+=====================================
+CHEAT: Prism
+Platform: FiveM
+Type: Menu (ESP, Aimbot)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  prism.exe
+  prism_loader.exe
+
+MODULE (DLLs):
+  prism.dll
+  prism_core.dll
+
+FENSTER-TITEL:
+  "Prism"             | Class: -  | Overlay: Nein
+  "Prism Menu"        | Class: -  | Overlay: Ja
+
+MUTEX:
+  PrismMutex
+  Global\PrismSingle
+
+STRINGS:
+  "Prism"             [Watermark]
+  "PrismESP"          [Class Name]
+  "PrismInit"         [Export Name]
+  "Prism v"           [Watermark]
+
+DATEIPFADE:
+  %APPDATA%\Prism\
+
+NETZWERK:
+  prism-cheats.net
+=====================================
+
+=====================================
+CHEAT: Venom
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  venom.exe
+  venom_loader.exe
+
+MODULE (DLLs):
+  venom.dll
+
+FENSTER-TITEL:
+  "Venom"             | Class: -  | Overlay: Nein
+  "Venom Menu"        | Class: -  | Overlay: Ja
+
+MUTEX:
+  VenomMutex
+
+STRINGS:
+  "Venom"             [Watermark]
+  "VenomFiveM"        [General]
+  "VenomInit"         [Export Name]
+  "Venom v"           [Watermark]
+
+NETZWERK:
+  venom-cheats.net
+=====================================
+
+=====================================
+CHEAT: Karma
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  karma.exe
+  karma_loader.exe
+
+MODULE (DLLs):
+  karma.dll
+
+FENSTER-TITEL:
+  "Karma"             | Class: -  | Overlay: Nein
+  "Karma Menu"        | Class: -  | Overlay: Ja
+
+MUTEX:
+  KarmaMutex
+
+STRINGS:
+  "Karma"             [Watermark]
+  "KarmaFiveM"        [General]
+  "KarmaInit"         [Export Name]
+  "Karma v"           [Watermark]
+
+NETZWERK:
+  karma-cheats.net
+=====================================
+
+=====================================
+CHEAT: Phantom
+Platform: FiveM
+Type: Menu (ESP, Silent Aim)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  phantom.exe
+  phantom_loader.exe
+
+MODULE (DLLs):
+  phantom.dll
+
+FENSTER-TITEL:
+  "Phantom"           | Class: -  | Overlay: Nein
+  "Phantom Menu"      | Class: -  | Overlay: Ja
+
+MUTEX:
+  PhantomMutex
+
+STRINGS:
+  "Phantom"           [Watermark]
+  "PhantomESP"        [Class Name]
+  "PhantomInit"       [Export Name]
+  "Phantom v"         [Watermark]
+
+NETZWERK:
+  phantom-cheats.net
+=====================================
+
+=====================================
+CHEAT: 2Take1
+Platform: FiveM (GTA-Port)
+Type: Menu (Full-Featured)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  2take1menu.exe
+  2take1.exe
+  2t1_loader.exe
+
+MODULE (DLLs):
+  2take1menu.dll
+  2t1_core.dll
+
+FENSTER-TITEL:
+  "2Take1"            | Class: -  | Overlay: Ja
+  "2take1menu"        | Class: -  | Overlay: Nein
+  "2T1"               | Class: -  | Overlay: Ja
+
+MUTEX:
+  2Take1Mutex
+  Global\2T1Single
+
+STRINGS:
+  "2Take1"            [Watermark]
+  "2take1menu"        [General]
+  "TwoTakeOne"        [General]
+  "2T1_Init"          [Export Name]
+  "2Take1 v"          [Watermark]
+  "2take1.menu"       [Network Agent]
+
+DATEIPFADE:
+  %APPDATA%\2Take1\
+  %APPDATA%\2take1menu\
+
+NETZWERK:
+  2take1.menu
+  auth.2take1.menu
+=====================================
+
+=====================================
+CHEAT: Cherax
+Platform: FiveM (GTA-Port)
+Type: Menu (Full-Featured)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  cherax.exe
+  cherax_loader.exe
+
+MODULE (DLLs):
+  cherax.dll
+  cherax_core.dll
+
+FENSTER-TITEL:
+  "Cherax"            | Class: -  | Overlay: Ja
+  "Cherax Menu"       | Class: -  | Overlay: Ja
+
+MUTEX:
+  CheraxMutex
+  Global\CheraxSingle
+
+STRINGS:
+  "Cherax"            [Watermark]
+  "CheraxMenu"        [General]
+  "CheraxInit"        [Export Name]
+  "Cherax v"          [Watermark]
+
+DATEIPFADE:
+  %APPDATA%\Cherax\
+
+NETZWERK:
+  cherax.net
+  auth.cherax.net
+=====================================
+
+=====================================
+CHEAT: Kiddion's Modest Menu
+Platform: FiveM (GTA-Port)
+Type: Menu (Free, Overlay)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  kiddion.exe
+  modest_menu.exe
+
+MODULE (DLLs):
+  kiddion.dll
+
+FENSTER-TITEL:
+  "Kiddion's Modest Menu" | Class: -  | Overlay: Ja
+  "Modest Menu"           | Class: -  | Overlay: Ja
+
+MUTEX:
+  KiddionMutex
+
+STRINGS:
+  "Kiddion"               [Watermark]
+  "Modest Menu"           [Watermark]
+  "Kiddion's Modest Menu" [Watermark]
+  "KiddionInit"           [Export Name]
+
+DATEIPFADE:
+  %USERPROFILE%\Desktop\kiddion*
+  %TEMP%\kiddion_*
+=====================================
+
+=====================================
+CHEAT: Stand
+Platform: FiveM (GTA-Port)
+Type: Menu (Premium, voll ausgestattet)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  stand.exe
+  stand_loader.exe
+
+MODULE (DLLs):
+  stand.dll
+  stand_core.dll
+
+FENSTER-TITEL:
+  "Stand"             | Class: -  | Overlay: Ja
+  "Stand Menu"        | Class: -  | Overlay: Ja
+
+MUTEX:
+  StandMutex
+  Global\StandSingle
+
+STRINGS:
+  "Stand"             [Watermark]
+  "StandCheat"        [General]
+  "StandInit"         [Export Name]
+  "Stand v"           [Watermark]
+  "stand.gg"          [Network Agent]
+
+DATEIPFADE:
+  %APPDATA%\Stand\
+  %APPDATA%\Stand\Config\
+
+NETZWERK:
+  stand.gg
+  auth.stand.gg
+=====================================
+
+=====================================
+CHEAT: CFX Dumper / Resource Stealer
+Platform: FiveM
+Type: Dumper (Skript/Asset-Diebstahl)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  cfx_dumper.exe
+  fivem_dumper.exe
+  resource_dumper.exe
+
+FENSTER-TITEL:
+  "CFX Dumper"        | Class: -  | Overlay: Nein
+  "FiveM Dumper"      | Class: -  | Overlay: Nein
+  "Resource Stealer"  | Class: -  | Overlay: Nein
+
+STRINGS:
+  "CFX_DUMP"          [General]
+  "ResourceDump"      [Debug String]
+  "DumpResource"      [Export Name]
+  "fivem_dump_"       [General - Datei-Präfix]
+  "cfx-dumper"        [General]
+  "DumpScript"        [Export Name]
+  "StealResource"     [Export Name]
+
+DATEIPFADE:
+  %TEMP%\cfx_dump\
+  %USERPROFILE%\Desktop\dump_*
+  %USERPROFILE%\Documents\cfx_dump\
+=====================================
+
+=====================================
+CHEAT: Specter
+Platform: FiveM
+Type: Menu / Overlay
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  specter.exe
+MODULE (DLLs):
+  specter.dll
+FENSTER-TITEL:
+  "Specter"           | Overlay: Ja
+MUTEX: SpecterMutex
+STRINGS:
+  "Specter"           [Watermark]
+  "SpecterESP"        [Class Name]
+  "SpecterInit"       [Export Name]
+=====================================
+
+=====================================
+CHEAT: Wraith
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  wraith.exe
+MODULE (DLLs):
+  wraith.dll
+FENSTER-TITEL:
+  "Wraith"            | Overlay: Ja
+MUTEX: WraithMutex
+STRINGS:
+  "Wraith"            [Watermark]
+  "WraithInit"        [Export Name]
+  "Wraith v"          [Watermark]
+=====================================
+
+=====================================
+CHEAT: Titan
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  titan.exe
+MODULE (DLLs):
+  titan.dll
+FENSTER-TITEL:
+  "Titan"             | Overlay: Nein
+  "Titan Menu"        | Overlay: Ja
+MUTEX: TitanMutex
+STRINGS:
+  "Titan"             [Watermark]
+  "TitanFiveM"        [General]
+  "TitanInit"         [Export Name]
+=====================================
+
+=====================================
+CHEAT: Vortex
+Platform: FiveM
+Type: Menu / Overlay
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  vortex.exe
+MODULE (DLLs):
+  vortex.dll
+FENSTER-TITEL:
+  "Vortex"            | Overlay: Ja
+MUTEX: VortexMutex
+STRINGS:
+  "Vortex"            [Watermark]
+  "VortexInit"        [Export Name]
+=====================================
+
+=====================================
+CHEAT: Tempest
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  tempest.exe
+MODULE (DLLs):
+  tempest.dll
+FENSTER-TITEL:
+  "Tempest"           | Overlay: Ja
+MUTEX: TempestMutex
+STRINGS:
+  "Tempest"           [Watermark]
+  "TempestInit"       [Export Name]
+=====================================
+
+=====================================
+CHEAT: Nexus
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  nexus.exe
+MODULE (DLLs):
+  nexus.dll
+FENSTER-TITEL:
+  "Nexus"             | Overlay: Nein
+  "Nexus Menu"        | Overlay: Ja
+MUTEX: NexusMutex
+STRINGS:
+  "Nexus"             [Watermark]
+  "NexusInit"         [Export Name]
+=====================================
+
+=====================================
+CHEAT: Apex
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  apex.exe
+  apex_fm.exe
+MODULE (DLLs):
+  apex.dll
+FENSTER-TITEL:
+  "Apex"              | Overlay: Nein
+  "ApexFiveM"         | Overlay: Ja
+MUTEX: ApexMutex
+STRINGS:
+  "Apex"              [Watermark]
+  "ApexFiveM"         [General]
+  "ApexInit"          [Export Name]
+=====================================
+
+=====================================
+CHEAT: Ghost
+Platform: FiveM
+Type: Menu / Overlay
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  ghost.exe
+MODULE (DLLs):
+  ghost.dll
+FENSTER-TITEL:
+  "Ghost"             | Overlay: Ja
+MUTEX: GhostMutex
+STRINGS:
+  "Ghost"             [Watermark]
+  "GhostFiveM"        [General]
+  "GhostInit"         [Export Name]
+=====================================
+
+=====================================
+CHEAT: Aether
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  aether.exe
+MODULE (DLLs):
+  aether.dll
+FENSTER-TITEL:
+  "Aether"            | Overlay: Nein
+  "Aether Menu"       | Overlay: Ja
+MUTEX: AetherMutex
+STRINGS:
+  "Aether"            [Watermark]
+  "AetherInit"        [Export Name]
+=====================================
+
+=====================================
+CHEAT: Quantum
+Platform: FiveM
+Type: Menu
+Paid: Ja
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  quantum.exe
+MODULE (DLLs):
+  quantum.dll
+FENSTER-TITEL:
+  "Quantum"           | Overlay: Nein
+  "Quantum Menu"      | Overlay: Ja
+MUTEX: QuantumMutex
+STRINGS:
+  "Quantum"           [Watermark]
+  "QuantumInit"       [Export Name]
+=====================================
+
+
+=====================================================================
+                          [ RageMP ]
+         Ziel-Prozesse: ragemp.exe | rage_mp_sp.exe
+=====================================================================
+
+=====================================
+CHEAT: RageMP Cheat Suite (RPCS)
+Platform: RageMP
+Type: Menu (Full-Featured)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  rmp_cheat.exe
+  rpcs_loader.exe
+
+MODULE (DLLs):
+  rmp_cheat.dll
+  rpcs_core.dll
+
+FENSTER-TITEL:
+  "RageMP Cheat Suite" | Class: -  | Overlay: Nein
+  "RPCS"               | Class: -  | Overlay: Ja
+  "RPCS Menu"          | Class: -  | Overlay: Ja
+
+MUTEX:
+  RageMPCheatMutex
+  Global\RPCSSingle
+
+NAMED PIPES:
+  \\.\pipe\rmp_cheat
+
+STRINGS:
+  "RageMP Cheat Suite" [Watermark]
+  "RPCS v"             [Watermark]
+  "RPCS_Init"          [Export Name]
+  "ragemp_hook"        [General]
+  "ragemp.exe"         [General - Injektionsziel]
+  "rage_mp_sp.exe"     [General - Injektionsziel]
+
+DATEIPFADE:
+  %APPDATA%\RMPCheat\
+  %TEMP%\rpcs_*
+
+NETZWERK:
+  rmpcheat.net
+  auth.rmpcheat.net
+=====================================
+
+=====================================
+CHEAT: Rage Bypass
+Platform: RageMP
+Type: Bypass (Anti-Cheat Umgehung)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  rage_bypass.exe
+  ragebypass.exe
+
+MODULE (DLLs):
+  rage_bypass.dll
+  rmp_bypass.dll
+
+FENSTER-TITEL:
+  "Rage Bypass"       | Class: RageBypassWnd | Overlay: Nein
+
+MUTEX:
+  RageBypassMutex
+  Global\RageBypassSingle
+
+STRINGS:
+  "Rage Bypass"           [Watermark]
+  "ragemp_bypass"         [General]
+  "bypass_rage"           [General]
+  "rage_anticheat_patch"  [General]
+  "RageBypassInit"        [Export Name]
+  "ragemp.exe"            [General - Ziel]
+  "RAGE Multiplayer"      [General - Fenster-Ziel]
+  "PatchAntiCheat"        [Export Name]
+
+DATEIPFADE:
+  %TEMP%\rage_bypass_*
+
+NETZWERK:
+  ragebypass.xyz
+=====================================
+
+=====================================
+CHEAT: RageESP
+Platform: RageMP
+Type: ESP (Spieler, Fahrzeuge)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  rageesp.exe
+
+MODULE (DLLs):
+  rageesp.dll
+
+FENSTER-TITEL:
+  "RageESP"           | Class: -  | Overlay: Ja
+
+MUTEX:
+  RageESPMutex
+
+STRINGS:
+  "RageESP"           [Watermark]
+  "ESP_DrawBoxes"     [Export Name]
+  "ESP_DrawNames"     [Export Name]
+  "ESP_DrawHealth"    [Export Name]
+  "ESP_DrawDistance"  [Export Name]
+  "RageESP_Init"      [Export Name]
+  "ESP_Enabled"       [Config Key]
+  "BoxESP"            [GUI Label]
+  "NameESP"           [GUI Label]
+=====================================
+
+=====================================
+CHEAT: RageAimbot
+Platform: RageMP
+Type: Aimbot / Silent Aim
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+MODULE (DLLs):
+  rageaimbot.dll
+
+STRINGS:
+  "RageAimbot"        [Watermark]
+  "SilentAim"         [GUI Label]
+  "AimSmooth"         [Config Key]
+  "FOV_Circle"        [Config Key]
+  "AimBone"           [Config Key]
+  "AimKey"            [Config Key]
+  "AimEnabled"        [Config Key]
+  "RageAimbot_Init"   [Export Name]
+=====================================
+
+=====================================
+CHEAT: RageSpeed (Speedhack)
+Platform: RageMP
+Type: Trainer (Speicher-Patch)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  ragespeed.dll
+
+STRINGS:
+  "RageSpeed"         [Watermark]
+  "speed_multiplier"  [Config Key]
+  "SpeedHack"         [GUI Label]
+  "SpeedEnabled"      [Config Key]
+  "RageSpeed_Init"    [Export Name]
+=====================================
+
+=====================================
+CHEAT: RageMP God Mode
+Platform: RageMP
+Type: Trainer (Unverwundbarkeit)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  ragegod.dll
+
+STRINGS:
+  "RageGodMode"       [Watermark]
+  "godmode_enabled"   [Config Key]
+  "GodMode"           [GUI Label]
+  "SetHealth_patch"   [Export Name]
+=====================================
+
+=====================================
+CHEAT: RageMP Vehicle Spawner
+Platform: RageMP
+Type: Trainer
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  rage_vehspawn.dll
+
+STRINGS:
+  "VehicleSpawn"      [GUI Label]
+  "SpawnVehicle"      [Export Name]
+  "VehicleHash"       [Config Key]
+  "SpawnCar"          [GUI Label]
+=====================================
+
+=====================================
+CHEAT: RageMP Skin Changer
+Platform: RageMP
+Type: Trainer (Ped-Changer)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  rage_skin.dll
+
+STRINGS:
+  "SkinChanger"       [GUI Label]
+  "ChangePed"         [Export Name]
+  "PedHash"           [Config Key]
+  "ModelChanger"      [GUI Label]
+=====================================
+
+=====================================
+CHEAT: RageMP Teleport
+Platform: RageMP
+Type: Trainer (Koordinaten-Teleport)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  rage_tp.dll
+
+STRINGS:
+  "Teleport"          [GUI Label]
+  "TeleportToCoords"  [Export Name]
+  "TeleportToWP"      [GUI Label]
+  "TP_X"              [Config Key]
+  "TP_Y"              [Config Key]
+  "TP_Z"              [Config Key]
+=====================================
+
+=====================================
+CHEAT: RageMP Noclip
+Platform: RageMP
+Type: Trainer (Physik-Manipulation)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  rage_noclip.dll
+
+STRINGS:
+  "Noclip"            [GUI Label]
+  "NoclipEnabled"     [Config Key]
+  "FlyMode"           [GUI Label]
+  "NoClip_Speed"      [Config Key]
+=====================================
+
+=====================================
+CHEAT: RageMP Packet Editor
+Platform: RageMP
+Type: Trainer (Netzwerk-Manipulation)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  rmp_packet.exe
+
+STRINGS:
+  "PacketEditor"      [GUI Label]
+  "PacketSniffer"     [GUI Label]
+  "EditPacket"        [Export Name]
+  "InjectPacket"      [Export Name]
+  "BlockPacket"       [Export Name]
+=====================================
+
+=====================================
+CHEAT: RageMP Resource Dumper
+Platform: RageMP
+Type: Dumper (Skript-Diebstahl)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  rmp_dumper.exe
+
+FENSTER-TITEL:
+  "RageMP Dumper"     | Class: -  | Overlay: Nein
+
+MUTEX:
+  RageDumperMutex
+
+STRINGS:
+  "RageMP Dumper"     [Watermark]
+  "RMP_DUMP"          [General]
+  "DumpClientScript"  [Export Name]
+  "RMP_DUMP_"         [Datei-Präfix]
+  "StealScript"       [Export Name]
+
+DATEIPFADE:
+  %USERPROFILE%\Desktop\rmp_dump\
+  %TEMP%\rmp_dump\
+=====================================
+
+=====================================
+CHEAT: Midnight RageMP
+Platform: RageMP
+Type: Menu (Midnight-Variante)
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+PROZESSE:
+  midnight_rage.exe
+
+MODULE (DLLs):
+  midnight_rage.dll
+
+FENSTER-TITEL:
+  "Midnight RageMP"   | Class: -  | Overlay: Nein
+  "MidnightRage"      | Class: -  | Overlay: Ja
+
+MUTEX:
+  MidnightRageMutex
+
+STRINGS:
+  "Midnight RageMP"   [Watermark]
+  "MidnightRage"      [General]
+  "MR_Init"           [Export Name]
+
+NETZWERK:
+  midnight-rage.com
+=====================================
+
+
+=====================================================================
+                          [ alt:V ]
+           Ziel-Prozess: altv.exe | alt-v.mp
+=====================================================================
+
+=====================================
+CHEAT: AltV Cheat Suite (ACS)
+Platform: alt:V
+Type: Menu (Full-Featured)
+Paid: Ja
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  altv_cheat.exe
+  acs_loader.exe
+
+MODULE (DLLs):
+  altv_cheat.dll
+  acs_core.dll
+
+FENSTER-TITEL:
+  "AltV Cheat Suite"  | Class: ACSWnd  | Overlay: Nein
+  "ACS"               | Class: -       | Overlay: Ja
+  "ACS Menu"          | Class: -       | Overlay: Ja
+
+MUTEX:
+  AltVCheatMutex
+  Global\ACSSingle
+
+STRINGS:
+  "AltV Cheat Suite"  [Watermark]
+  "ACS v"             [Watermark]
+  "ACS_Init"          [Export Name]
+  "altv_hook"         [General]
+  "altv.exe"          [General - Injektionsziel]
+
+DATEIPFADE:
+  %APPDATA%\AltVCheat\
+  %TEMP%\acs_*
+
+NETZWERK:
+  altv-cheat.net
+  auth.altv-cheat.net
+=====================================
+
+=====================================
+CHEAT: AltV Bypass
+Platform: alt:V
+Type: Bypass (Integritätsprüfung)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  altv_bypass.exe
+  alt_bypass.exe
+
+MODULE (DLLs):
+  altv_bypass.dll
+  alt_bypass_core.dll
+
+FENSTER-TITEL:
+  "AltV Bypass"       | Class: AltVBypassWnd | Overlay: Nein
+
+MUTEX:
+  AltVBypassMutex
+  Global\AltVBypassSingle
+
+STRINGS:
+  "AltV Bypass"           [Watermark]
+  "altv_bypass"           [General]
+  "bypass_altv"           [General]
+  "altv_integrity_patch"  [General]
+  "PatchIntegrityCheck"   [Export Name]
+  "altv.exe"              [General - Ziel]
+  "alt-v.mp"              [General - Fenstertitel-Ziel]
+  "BypassAltV"            [Export Name]
+
+DATEIPFADE:
+  %TEMP%\altv_bypass_*
+
+NETZWERK:
+  altv-bypass.xyz
+=====================================
+
+=====================================
+CHEAT: AltV ESP
+Platform: alt:V
+Type: ESP (Spieler, Fahrzeuge, Entfernung)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+MODULE (DLLs):
+  altvesp.dll
+  altv_esp_core.dll
+
+FENSTER-TITEL:
+  "AltV ESP"          | Class: -  | Overlay: Ja
+
+MUTEX:
+  AltVESPMutex
+
+STRINGS:
+  "AltV ESP"          [Watermark]
+  "altvesp"           [General]
+  "DrawBoxESP"        [Export Name]
+  "DrawNameESP"       [Export Name]
+  "DrawHealthESP"     [Export Name]
+  "DrawDistanceESP"   [Export Name]
+  "ESP_Enabled"       [Config Key]
+  "BoxESP"            [GUI Label]
+  "NameESP"           [GUI Label]
+=====================================
+
+=====================================
+CHEAT: AltV Resource Dumper
+Platform: alt:V
+Type: Dumper (JS-Ressourcen-Diebstahl)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  altv_dumper.exe
+
+MODULE (DLLs):
+  altv_dumper.dll
+
+FENSTER-TITEL:
+  "AltV Dumper"       | Class: -  | Overlay: Nein
+
+MUTEX:
+  AltVDumperMutex
+
+STRINGS:
+  "AltV Dumper"       [Watermark]
+  "altv_dump"         [General]
+  "DumpJS"            [Export Name]
+  "DumpResource"      [Export Name]
+  "ALTV_DUMP_"        [Datei-Präfix]
+  "StealJS"           [Export Name]
+
+DATEIPFADE:
+  %USERPROFILE%\Desktop\altv_dump\
+  %TEMP%\altv_dump\
+
+NETZWERK:
+  altvdumper.net
+=====================================
+
+=====================================
+CHEAT: V8 Injector
+Platform: alt:V
+Type: Script Injector (JavaScript in V8-Runtime)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Confirmed
+=====================================
+PROZESSE:
+  v8_injector.exe
+  v8inject.exe
+
+MODULE (DLLs):
+  v8inject.dll
+  v8_hook.dll
+
+FENSTER-TITEL:
+  "V8 Injector"       | Class: -  | Overlay: Nein
+
+MUTEX:
+  V8InjectMutex
+  Global\V8InjectSingle
+
+STRINGS:
+  "V8 Injector"       [Watermark]
+  "v8inject"          [General]
+  "InjectJS"          [Export Name]
+  "eval("             [General - JS-Injection]
+  "alt.emit("         [General - AltV Event Exploit]
+  "alt.Player.local"  [General - AltV Player Exploit]
+  "alt.LocalPlayer"   [General]
+  "V8Inject_Init"     [Export Name]
+
+DATEIPFADE:
+  %APPDATA%\v8inject\
+=====================================
+
+=====================================
+CHEAT: CefSharp Injector
+Platform: alt:V
+Type: Script Injector (Chromium-Browser in alt:V)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: Medium
+=====================================
+PROZESSE:
+  cef_injector.exe
+
+MODULE (DLLs):
+  cef_hook.dll
+  cef_inject.dll
+
+FENSTER-TITEL:
+  "CefSharp Injector"  | Class: -  | Overlay: Nein
+
+MUTEX:
+  CefInjectMutex
+
+STRINGS:
+  "CefSharp Injector" [Watermark]
+  "cef_inject"        [General]
+  "InjectCEF"         [Export Name]
+  "CEF_Exploit"       [General]
+  "CefHook"           [General]
+=====================================
+
+=====================================
+CHEAT: AltV Aimbot
+Platform: alt:V
+Type: Aimbot / Silent Aim
+Paid: Ja
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_aimbot.dll
+
+STRINGS:
+  "AltV Aimbot"       [Watermark]
+  "silent_aim"        [Config Key]
+  "aim_fov"           [Config Key]
+  "aim_smooth"        [Config Key]
+  "AimBone"           [Config Key]
+  "SilentAim"         [GUI Label]
+  "AimAssist"         [GUI Label]
+  "AimEnabled"        [Config Key]
+
+NETZWERK:
+  altv-aimbot.com
+=====================================
+
+=====================================
+CHEAT: AltV Noclip
+Platform: alt:V
+Type: Trainer (Physik-Manipulation)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_noclip.dll
+
+STRINGS:
+  "AltV Noclip"       [Watermark]
+  "noclip_enabled"    [Config Key]
+  "FlyMode"           [GUI Label]
+  "NoClip_Speed"      [Config Key]
+=====================================
+
+=====================================
+CHEAT: AltV Speed Hack
+Platform: alt:V
+Type: Trainer (Speedhack)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_speed.dll
+
+STRINGS:
+  "AltV Speed"        [Watermark]
+  "speed_multiplier"  [Config Key]
+  "SpeedHack"         [GUI Label]
+=====================================
+
+=====================================
+CHEAT: AltV God Mode
+Platform: alt:V
+Type: Trainer (Unverwundbarkeit)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_god.dll
+
+STRINGS:
+  "AltV God Mode"     [Watermark]
+  "godmode_enabled"   [Config Key]
+  "GodMode"           [GUI Label]
+=====================================
+
+=====================================
+CHEAT: AltV Event Spoofer
+Platform: alt:V
+Type: Script (Server-Event-Fälschung)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_evtspoof.dll
+
+STRINGS:
+  "EventSpoofer"      [General]
+  "alt.emit"          [General - AltV API Exploit]
+  "SpoofEvent"        [Export Name]
+  "FakeServerEvent"   [Export Name]
+=====================================
+
+=====================================
+CHEAT: AltV Teleport
+Platform: alt:V
+Type: Trainer (Koordinaten-Teleport)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_tp.dll
+
+STRINGS:
+  "Teleport"          [GUI Label]
+  "TeleportToCoords"  [Export Name]
+  "TeleportToWP"      [GUI Label]
+  "TP_Enabled"        [Config Key]
+=====================================
+
+=====================================
+CHEAT: AltV Vehicle Spawner
+Platform: alt:V
+Type: Trainer
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_veh.dll
+
+STRINGS:
+  "VehicleSpawn_altv" [GUI Label]
+  "SpawnVehicle"      [Export Name]
+  "VehicleHash"       [Config Key]
+=====================================
+
+=====================================
+CHEAT: AltV Skin Changer
+Platform: alt:V
+Type: Trainer (Ped-Changer)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  altv_skin.dll
+
+STRINGS:
+  "SkinChanger_altv"  [GUI Label]
+  "ChangePed"         [Export Name]
+  "PedHash"           [Config Key]
+=====================================
+
+=====================================
+CHEAT: AltV Packet Spoofer
+Platform: alt:V
+Type: Trainer (Netzwerk-Manipulation)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+STRINGS:
+  "PacketSpoofer"     [General]
+  "SpoofPacket"       [Export Name]
+  "PacketEditor"      [GUI Label]
+=====================================
+
+=====================================
+CHEAT: AltV CEF Exploit
+Platform: alt:V
+Type: Script (Chromium-Browser Exploit)
+Paid: Nein (Free)
+Status: Aktiv
+Confidence: High
+=====================================
+MODULE (DLLs):
+  cef_exploit.dll
+
+STRINGS:
+  "CEF_Exploit"       [General]
+  "cef_exploit"       [General - klein]
+  "ExploitCEF"        [Export Name]
+  "ChromiumExploit"   [General]
+=====================================
+
+
+=====================================================================
+          [ PLATTFORMÜBERGREIFENDE TOOLS (alle drei) ]
+=====================================================================
+
+=====================================
+TOOL: Xenos Injector
+Plattformen: FiveM | RageMP | alt:V
+Type: DLL Injector
+Paid: Nein (Open Source)
+=====================================
+PROZESSE:
+  xenos.exe
+  xenos64.exe
+
+MODULE (DLLs):
+  xenos.dll
+
+FENSTER-TITEL:
+  "Xenos"             | Class: XenosWnd | Overlay: Nein
+  "Xenos Injector"    | Class: -        | Overlay: Nein
+
+STRINGS:
+  "Xenos"             [Watermark]
+  "ManualMap"         [GUI Label - Injektionsmethode]
+  "ThreadHijack"      [GUI Label - Injektionsmethode]
+  "LoadLibrary"       [GUI Label - Injektionsmethode]
+  "SetWindowsHookEx"  [GUI Label - Injektionsmethode]
+
+DATEIPFADE:
+  %TEMP%\xenos_*
+
+REGISTRY:
+  HKCU\Software\Xenos  ->  LastProcess
+=====================================
+
+=====================================
+TOOL: Extreme Injector
+Plattformen: FiveM | RageMP | alt:V
+Type: DLL Injector
+Paid: Nein (Free)
+=====================================
+PROZESSE:
+  ExtremeInjector.exe
+  ExtremeInjectorv3.exe
+
+FENSTER-TITEL:
+  "Extreme Injector"   | Class: EIWnd | Overlay: Nein
+  "Extreme Injector v3"| Class: -     | Overlay: Nein
+
+STRINGS:
+  "Extreme Injector"  [Watermark]
+  "Manual Mapping"    [GUI Label]
+  "Thread Hijacking"  [GUI Label]
+  "Kernel Injection"  [GUI Label]
+  "LoadLibrary"       [GUI Label]
+
+DATEIPFADE:
+  %APPDATA%\Extreme Injector\
+
+REGISTRY:
+  HKCU\Software\Extreme Injector  ->  LastDLL
+=====================================
+
+=====================================
+TOOL: GH Injector (GuardianHijack)
+Plattformen: FiveM | RageMP | alt:V
+Type: DLL Injector (Open Source)
+Paid: Nein (Open Source)
+=====================================
+PROZESSE:
+  GHInjector-GUI.exe
+  GHInjector-CLI.exe
+
+MODULE (DLLs):
+  GHInjector.dll
+  GHInjector-x64.dll
+
+FENSTER-TITEL:
+  "GH Injector"       | Class: GHWnd | Overlay: Nein
+
+STRINGS:
+  "GuardianHijack"    [Watermark]
+  "GH Injector"       [Watermark]
+  "ManualMap"         [GUI Label]
+  "ThreadHijack"      [GUI Label]
+=====================================
+
+=====================================
+TOOL: Process Hacker / System Informer
+Plattformen: FiveM | RageMP | alt:V
+Type: Process Explorer / DLL Injector
+Paid: Nein (Open Source)
+=====================================
+PROZESSE:
+  ProcessHacker.exe
+  ProcessHacker2.exe
+  systeminformer.exe
+
+FENSTER-TITEL:
+  "Process Hacker"     | Class: ProcessHackerWnd | Overlay: Nein
+  "System Informer"    | Class: -                | Overlay: Nein
+
+STRINGS:
+  "Process Hacker"    [Watermark]
+  "System Informer"   [Watermark]
+=====================================
+
+=====================================
+TOOL: Cheat Engine
+Plattformen: FiveM | RageMP | alt:V
+Type: Memory Scanner / Editor
+Paid: Nein (Free)
+=====================================
+PROZESSE:
+  cheatengine-x86_64.exe
+  cheatengine.exe
+  Cheat Engine.exe
+  cheatengine-x86_64-SSE4-AVX2.exe
+
+MODULE (DLLs):
+  cheatengine-x86_64.dll
+  vehdebug-x86_64.dll
+
+FENSTER-TITEL:
+  "Cheat Engine"       | Class: CEWnd | Overlay: Nein
+  "Cheat Engine 7"     | Class: -     | Overlay: Nein
+  "Cheat Engine 6"     | Class: -     | Overlay: Nein
+  "Memory Scanner"     | Class: -     | Overlay: Nein
+
+STRINGS:
+  "Cheat Engine"      [Watermark]
+  "DBVM"              [General - VM-Based Memory]
+  "lua_State"         [General - Lua Engine]
+  "ceDriver"          [General - Kernel Driver]
+  "dbk64.sys"         [General - Treiber]
+  "dbk32.sys"         [General - Treiber]
+
+DATEIPFADE:
+  %APPDATA%\Cheat Engine\
+  %USERPROFILE%\Documents\My Cheat Tables\
+  C:\Windows\System32\dbk64.sys
+  C:\Windows\System32\dbk32.sys
+
+REGISTRY:
+  HKCU\Software\Cheat Engine  ->  LastProcess
+  HKCU\Software\Cheat Engine  ->  Version
+
+SPEICHER-PATTERN:
+  43 68 65 61 74 45 6E 67 69 6E 65   [ASCII "CheatEngine"]
+=====================================
+
+=====================================
+TOOL: x64dbg / x32dbg
+Plattformen: FiveM | RageMP | alt:V
+Type: Debugger
+Paid: Nein (Open Source)
+=====================================
+PROZESSE:
+  x64dbg.exe
+  x32dbg.exe
+
+FENSTER-TITEL:
+  "x64dbg"            | Class: Qt5QWindowIcon | Overlay: Nein
+  "x32dbg"            | Class: Qt5QWindowIcon | Overlay: Nein
+
+STRINGS:
+  "x64dbg"            [Watermark]
+  "x32dbg"            [Watermark]
+  "x64dbg.ini"        [Config Datei]
+
+DATEIPFADE:
+  %APPDATA%\x64dbg\
+  x64dbg.ini
+=====================================
+
+=====================================
+TOOL: ReClass.NET
+Plattformen: FiveM | RageMP | alt:V
+Type: Memory Reconstructor
+Paid: Nein (Open Source)
+=====================================
+PROZESSE:
+  ReClass.NET.exe
+
+FENSTER-TITEL:
+  "ReClass.NET"       | Class: -  | Overlay: Nein
+
+STRINGS:
+  "ReClass.NET"       [Watermark]
+  "ReClass"           [General]
+=====================================
+
+=====================================
+TOOL: ScyllaHide
+Plattformen: FiveM | RageMP | alt:V
+Type: Anti-Anti-Debug Plugin
+Paid: Nein (Open Source)
+=====================================
+PROZESSE:
+  ScyllaHide.exe
+
+MODULE (DLLs):
+  ScyllaHide.dll
+  ScyllaHideInjector.dll
+  ScyllaHideSSE2.dll
+
+FENSTER-TITEL:
+  "ScyllaHide"        | Class: -  | Overlay: Nein
+
+STRINGS:
+  "ScyllaHide"                 [Watermark]
+  "NtSetInformationThread"     [General - Anti-Debug API Hook]
+  "NtQueryInformationProcess"  [General - Anti-Debug API Hook]
+  "CheckRemoteDebuggerPresent" [General - Anti-Debug Hook]
+  "IsDebuggerPresent"          [General - Anti-Debug Hook]
+  "NtClose"                    [General - Anti-Debug Hook]
+
+DATEIPFADE:
+  %APPDATA%\ScyllaHide\
+
+SPEICHER-PATTERN:
+  E8 ?? ?? ?? ?? 85 C0 74 ?? C7 45   [NtQuery Hook - ntdll.dll]
+=====================================
+
+=====================================
+TOOL: BE Bypass (BattlEye Bypass)
+Plattformen: FiveM | RageMP | alt:V
+Type: Anti-Cheat Bypass
+Paid: Nein (Free)
+=====================================
+MODULE (DLLs):
+  be_bypass.dll
+  battleeye_bypass.dll
+
+STRINGS:
+  "BattlEye Bypass"   [Watermark]
+  "be_bypass"         [General]
+  "BEService"         [General - BattlEye Ziel]
+  "BEClient.dll"      [General - BattlEye Ziel]
+  "BEDaisy.sys"       [General - BattlEye Treiber]
+  "PatchBE"           [Export Name]
+
+SPEICHER-PATTERN:
+  42 45 43 6C 69 65 6E 74   [ASCII "BEClient"]
+=====================================
+
+=====================================
+TOOL: EAC Bypass (EasyAntiCheat Bypass)
+Plattformen: FiveM | RageMP | alt:V
+Type: Anti-Cheat Bypass
+Paid: Nein (Free)
+=====================================
+MODULE (DLLs):
+  eac_bypass.dll
+  easyanticheat_bypass.dll
+
+STRINGS:
+  "EAC Bypass"        [Watermark]
+  "easyanticheat"     [General - case insensitive]
+  "EasyAntiCheat.sys" [General - EAC Treiber Ziel]
+  "EasyAntiCheat.dll" [General - EAC DLL Ziel]
+  "PatchEAC"          [Export Name]
+
+SPEICHER-PATTERN:
+  45 61 73 79 41 6E 74 69 43 68 65 61 74   [ASCII "EasyAntiCheat"]
+=====================================
+
+=====================================
+TOOL: ImGui Overlay Framework
+Plattformen: FiveM | RageMP | alt:V
+Type: Overlay Framework (Basis vieler Cheats)
+Paid: Nein (Open Source)
+=====================================
+MODULE (DLLs):
+  d3d11_hook.dll
+  imgui_overlay.dll
+  dx_hook.dll
+
+STRINGS:
+  "ImGui"             [General]
+  "ImGui::Begin("     [General - Fenster-Erstellung]
+  "Dear ImGui"        [General - offizielle Bezeichnung]
+  "imgui.ini"         [Config Datei]
+  "IMGUI_VERSION"     [General]
+  "ImGui::Render()"   [General]
+
+DATEIPFADE:
+  imgui.ini   [im Spielordner oder %APPDATA%]
+
+SPEICHER-PATTERN:
+  48 89 5C 24 ?? 57 48 83 EC ?? 48 8B F9   [D3D11 Present Hook]
+=====================================
+
+=====================================
+TOOL: D3D11 / DirectX Hook
+Plattformen: FiveM | RageMP | alt:V
+Type: DirectX Overlay Hook
+Paid: Nein (Free)
+=====================================
+MODULE (DLLs):
+  d3dhook.dll
+  dx11hook.dll
+  d3d11_proxy.dll
+
+STRINGS:
+  "D3D11Hook"         [General]
+  "Present"           [General - D3D Present Hook Ziel]
+  "ResizeBuffers"     [General - D3D ResizeBuffers Hook]
+  "IDXGISwapChain"    [General - COM Interface Ziel]
+  "D3D11_CREATE"      [General]
+=====================================
+
+=====================================
+TOOL: OllyDbg
+Plattformen: FiveM | RageMP | alt:V
+Type: Debugger (32-bit)
+Paid: Nein (Free)
+=====================================
+PROZESSE:
+  ollydbg.exe
+  OLLYDBG.EXE
+
+FENSTER-TITEL:
+  "OllyDbg"           | Class: - | Overlay: Nein
+
+STRINGS:
+  "OllyDbg"           [Watermark]
+=====================================
+
+=====================================
+TOOL: HxD Hex Editor
+Plattformen: FiveM | RageMP | alt:V
+Type: Hex Editor / Memory Editor
+Paid: Nein (Free)
+=====================================
+PROZESSE:
+  HxD.exe
+
+FENSTER-TITEL:
+  "HxD"               | Class: - | Overlay: Nein
+
+STRINGS:
+  "HxD"               [Watermark]
+=====================================
+
+=====================================
+TOOL: Fiddler / Fiddler Everywhere
+Plattformen: FiveM | RageMP | alt:V
+Type: HTTP Proxy (Cheat-Auth abfangen)
+Paid: Nein (Free)
+=====================================
+PROZESSE:
+  fiddler.exe
+  Fiddler.exe
+  Fiddler Everywhere.exe
+
+FENSTER-TITEL:
+  "Fiddler"            | Class: IEFrame | Overlay: Nein
+  "Fiddler Web Debugger"| Class: -      | Overlay: Nein
+  "Fiddler Everywhere" | Class: -       | Overlay: Nein
+
+STRINGS:
+  "Fiddler"           [Watermark]
+
+DATEIPFADE:
+  %USERPROFILE%\Documents\Fiddler2\
+=====================================
+
+=====================================
+TOOL: Wireshark
+Plattformen: FiveM | RageMP | alt:V
+Type: Netzwerk-Sniffer
+Paid: Nein (Free)
+=====================================
+PROZESSE:
+  Wireshark.exe
+  wireshark.exe
+  dumpcap.exe
+
+FENSTER-TITEL:
+  "Wireshark"         | Class: - | Overlay: Nein
+
+STRINGS:
+  "Wireshark"         [Watermark]
+=====================================
+
+=====================================
+TOOL: VAC Bypass
+Plattformen: FiveM | RageMP | alt:V
+Type: Anti-Cheat Bypass (Steam VAC)
+Paid: Nein (Free)
+=====================================
+MODULE (DLLs):
+  vac_bypass.dll
+
+STRINGS:
+  "VAC Bypass"        [Watermark]
+  "VACBypass"         [General]
+  "SteamVAC"          [General - Ziel]
+  "PatchVAC"          [Export Name]
+=====================================
+
+=====================================
+TOOL: Themida Unpacker
+Plattformen: FiveM | RageMP | alt:V
+Type: Protector Bypass
+Paid: Nein (Free)
+=====================================
+MODULE (DLLs):
+  themida_unpack.dll
+
+STRINGS:
+  "Themida"           [Watermark - Schutz-Erkennung]
+  "UnpackThemida"     [Export Name]
+  "ThemidaBypass"     [General]
+=====================================
+
+=====================================
+TOOL: VMProtect Bypass
+Plattformen: FiveM | RageMP | alt:V
+Type: Protector Bypass
+Paid: Nein (Free)
+=====================================
+MODULE (DLLs):
+  vmp_bypass.dll
+
+STRINGS:
+  "VMProtect"         [Watermark - Erkennung]
+  "VMPBypass"         [General]
+  "BypassVMP"         [Export Name]
+=====================================
+
+
+=====================================================================
+                       ZUSAMMENFASSUNG
+=====================================================================
+
+FiveM Cheats:         44 (Eulen, Lynx, Midnight, RedEngine, Hammafia,
+                          NFIVE, Oxiware, Stellar, Frostbite, Hydra,
+                          Eclipse, Flawless, Haze, Skulled, Prestige,
+                          Noire, Prism, Venom, Karma, Phantom, Inferno,
+                          Cascade, Specter, Wraith, Titan, Vortex,
+                          Tempest, Blaze, Ember, Nexus, Apex, Ghost,
+                          Shadow, Aether, Quantum, 2Take1, Cherax,
+                          Kiddion, Stand, CFX Dumper, Resource Stealer,
+                          SkidMenu, Pawn Script Injector, Eclipse)
+
+RageMP Cheats:        12 (Cheat Suite, Rage Bypass, RageESP, RageAimbot,
+                          RageSpeed, God Mode, Vehicle Spawn, Skin Changer,
+                          Teleport, Noclip, Packet Editor, Resource Dumper,
+                          Midnight RageMP)
+
+AltV Cheats:          14 (Cheat Suite, Bypass, ESP, Resource Dumper,
+                          V8 Injector, CefSharp Injector, Aimbot, Noclip,
+                          Speed Hack, God Mode, Event Spoofer, Teleport,
+                          Vehicle Spawner, CEF Exploit, Packet Spoofer)
+
+Plattformübergreifend: 16 (Xenos, Extreme Injector, GH Injector,
+                           Process Hacker, Cheat Engine, x64dbg, x32dbg,
+                           ReClass.NET, ScyllaHide, BE Bypass, EAC Bypass,
+                           VAC Bypass, ImGui, D3D11 Hook, OllyDbg, HxD,
+                           Fiddler, Wireshark, Themida Unpacker, VMProtect)
+
+=====================================================================
