@@ -1,0 +1,706 @@
+{
+  "meta": {
+    "version": "1.0",
+    "platforms": ["fivem", "ragamp", "altv", "common"],
+    "last_updated": "2026-06-22",
+    "description": "Cheat-Signatur-Datenbank für FiveM / RageMP / AltV Analyzer Tool"
+  },
+  "platforms": {
+    "fivem": {
+      "display_name": "FiveM",
+      "cheats": [
+        {
+          "name": "Eulen",
+          "aliases": ["EulenCheats"],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["eulen.exe", "eulen_loader.exe", "eulen_client.exe"],
+          "modules": ["eulen.dll", "eulen_core.dll", "eulen_hook.dll"],
+          "windows": [
+            {"title": "Eulen", "class": "EulenWnd", "overlay": false},
+            {"title": "Eulen Cheats", "class": "EulenWnd", "overlay": false},
+            {"title": "Eulen Client", "class": null, "overlay": false},
+            {"title": "Eulen Overlay", "class": null, "overlay": true}
+          ],
+          "mutexes": ["EulenMutex", "Global\\EulenSingle", "EulenClientMutex"],
+          "pipes": ["\\\\.\\pipe\\eulen", "\\\\.\\pipe\\eulen_client"],
+          "strings": [
+            {"value": "Eulen", "type": "watermark"},
+            {"value": "EulenCheats", "type": "general"},
+            {"value": "eulen.pw", "type": "network_agent"},
+            {"value": "Eulen v", "type": "watermark"},
+            {"value": "Eulen Loaded", "type": "debug_string"},
+            {"value": "EulenESP", "type": "class_name"},
+            {"value": "EulenAimbot", "type": "class_name"},
+            {"value": "EulenInit", "type": "export_name"}
+          ],
+          "file_paths": [
+            "%APPDATA%\\Eulen\\",
+            "%APPDATA%\\Eulen\\config.json",
+            "%TEMP%\\eulen_"
+          ],
+          "registry": [
+            {"key": "HKCU\\Software\\Eulen", "value": "License"},
+            {"key": "HKCU\\Software\\Eulen", "value": "Version"}
+          ],
+          "network": [
+            {"type": "domain", "value": "eulen.pw"},
+            {"type": "domain", "value": "auth.eulen.pw"},
+            {"type": "domain", "value": "cdn.eulen.pw"}
+          ]
+        },
+        {
+          "name": "Lynx",
+          "aliases": ["Lynx Client", "LynxMenu"],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["lynx.exe", "lynx_loader.exe"],
+          "modules": ["lynx.dll", "lynx_core.dll"],
+          "windows": [
+            {"title": "Lynx", "class": "LynxWnd", "overlay": false},
+            {"title": "Lynx Client", "class": null, "overlay": false},
+            {"title": "Lynx Menu", "class": null, "overlay": true}
+          ],
+          "mutexes": ["LynxMutex", "Global\\LynxSingle"],
+          "pipes": ["\\\\.\\pipe\\lynx"],
+          "strings": [
+            {"value": "Lynx", "type": "watermark"},
+            {"value": "LynxCheats", "type": "general"},
+            {"value": "lynxcheats.net", "type": "network_agent"},
+            {"value": "Lynx v", "type": "watermark"},
+            {"value": "LynxLoaded", "type": "debug_string"}
+          ],
+          "file_paths": [
+            "%APPDATA%\\Lynx\\",
+            "%APPDATA%\\Lynx\\config.json"
+          ],
+          "network": [
+            {"type": "domain", "value": "lynxcheats.net"},
+            {"type": "domain", "value": "auth.lynxcheats.net"}
+          ]
+        },
+        {
+          "name": "Midnight",
+          "aliases": ["MidnightCheats"],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["midnight.exe"],
+          "modules": ["midnight.dll"],
+          "windows": [
+            {"title": "Midnight", "class": "MidnightWnd", "overlay": false},
+            {"title": "Midnight Menu", "class": null, "overlay": true},
+            {"title": "Midnight Cheats", "class": null, "overlay": false}
+          ],
+          "mutexes": ["MidnightMutex"],
+          "pipes": ["\\\\.\\pipe\\midnight"],
+          "strings": [
+            {"value": "Midnight", "type": "watermark"},
+            {"value": "midnight-cheats", "type": "network_agent"},
+            {"value": "MidnightESP", "type": "class_name"},
+            {"value": "MidnightMenu", "type": "gui_label"}
+          ],
+          "file_paths": ["%APPDATA%\\Midnight\\"],
+          "network": [{"type": "domain", "value": "midnight-cheats.com"}]
+        },
+        {
+          "name": "RedEngine",
+          "aliases": ["Red Engine", "red-engine"],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["redengine.exe", "red_engine_loader.exe"],
+          "modules": ["redengine.dll", "rengine.dll"],
+          "windows": [
+            {"title": "RedEngine", "class": "RedEngineWnd", "overlay": false},
+            {"title": "Red Engine", "class": null, "overlay": false}
+          ],
+          "mutexes": ["RedEngineMutex", "Global\\RedEngine"],
+          "pipes": ["\\\\.\\pipe\\redengine"],
+          "strings": [
+            {"value": "RedEngine", "type": "watermark"},
+            {"value": "Red Engine", "type": "watermark"},
+            {"value": "red-engine", "type": "network_agent"},
+            {"value": "RE_Init", "type": "export_name"},
+            {"value": "REVersion", "type": "config_key"}
+          ],
+          "file_paths": ["%APPDATA%\\RedEngine\\"],
+          "registry": [{"key": "HKCU\\Software\\RedEngine", "value": "License"}],
+          "network": [{"type": "domain", "value": "redengine.xyz"}]
+        },
+        {
+          "name": "Hammafia",
+          "aliases": [],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["hammafia.exe"],
+          "modules": ["hammafia.dll"],
+          "windows": [{"title": "Hammafia", "class": "HammafiaWnd", "overlay": false}],
+          "mutexes": ["HammafiaM"],
+          "strings": [
+            {"value": "Hammafia", "type": "watermark"},
+            {"value": "hammafia.com", "type": "network_agent"},
+            {"value": "HM_Loaded", "type": "debug_string"}
+          ],
+          "file_paths": ["%APPDATA%\\Hammafia\\"],
+          "network": [{"type": "domain", "value": "hammafia.com"}]
+        },
+        {
+          "name": "NFIVE",
+          "aliases": ["NoFiveM", "nfive"],
+          "type": "bypass",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["nfive.exe", "nofivem.exe"],
+          "modules": [],
+          "windows": [
+            {"title": "NFIVE", "class": null, "overlay": false},
+            {"title": "NoFiveM", "class": null, "overlay": false}
+          ],
+          "mutexes": ["NFIVEMutex"],
+          "strings": [
+            {"value": "NFIVE", "type": "watermark"},
+            {"value": "nfive", "type": "general", "case_sensitive": false},
+            {"value": "NoFiveM", "type": "general"},
+            {"value": "CitizenFX_bypass", "type": "general"},
+            {"value": "bypass_cfx", "type": "general"}
+          ],
+          "file_paths": ["%TEMP%\\nfive_"],
+          "network": [{"type": "domain", "value": "nfive.net"}]
+        },
+        {
+          "name": "CFX Dumper",
+          "aliases": ["FiveMDumper", "cfx-dumper"],
+          "type": "dumper",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["cfx_dumper.exe", "fivem_dumper.exe"],
+          "modules": [],
+          "windows": [
+            {"title": "CFX Dumper", "class": null, "overlay": false},
+            {"title": "FiveM Dumper", "class": null, "overlay": false}
+          ],
+          "mutexes": [],
+          "strings": [
+            {"value": "CFX_DUMP", "type": "general"},
+            {"value": "ResourceDump", "type": "debug_string"},
+            {"value": "DumpResource", "type": "export_name"},
+            {"value": "fivem_dump_", "type": "general"}
+          ],
+          "file_paths": [
+            "%TEMP%\\cfx_dump\\",
+            "%USERPROFILE%\\Desktop\\dump_"
+          ]
+        }
+      ]
+    },
+    "ragamp": {
+      "display_name": "RageMP",
+      "target_processes": ["ragemp.exe", "rage_mp_sp.exe"],
+      "cheats": [
+        {
+          "name": "RageMP Cheat Suite",
+          "aliases": ["RPCS"],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["rmp_cheat.exe"],
+          "modules": ["rmp_cheat.dll"],
+          "windows": [
+            {"title": "RageMP Cheat Suite", "class": null, "overlay": false},
+            {"title": "RPCS", "class": null, "overlay": true}
+          ],
+          "mutexes": ["RageMPCheatMutex"],
+          "strings": [
+            {"value": "RageMP Cheat Suite", "type": "watermark"},
+            {"value": "RPCS v", "type": "watermark"},
+            {"value": "RPCS_Init", "type": "export_name"},
+            {"value": "ragemp_hook", "type": "general"}
+          ],
+          "file_paths": ["%APPDATA%\\RMPCheat\\"],
+          "network": [{"type": "domain", "value": "rmpcheat.net"}]
+        },
+        {
+          "name": "Rage Bypass",
+          "aliases": ["ragebypass", "rage-bypass"],
+          "type": "bypass",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["rage_bypass.exe"],
+          "modules": ["rage_bypass.dll"],
+          "windows": [{"title": "Rage Bypass", "class": "RageBypassWnd", "overlay": false}],
+          "mutexes": ["RageBypassMutex"],
+          "strings": [
+            {"value": "Rage Bypass", "type": "watermark"},
+            {"value": "ragemp_bypass", "type": "general"},
+            {"value": "bypass_rage", "type": "general"},
+            {"value": "rage_anticheat_patch", "type": "general"},
+            {"value": "ragemp.exe", "type": "general"},
+            {"value": "rage_mp_sp.exe", "type": "general"}
+          ],
+          "file_paths": ["%TEMP%\\rage_bypass_"],
+          "network": [{"type": "domain", "value": "ragebypass.xyz"}]
+        },
+        {
+          "name": "RageESP",
+          "aliases": [],
+          "type": "esp",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["rageesp.exe"],
+          "modules": ["rageesp.dll"],
+          "windows": [{"title": "RageESP", "class": null, "overlay": true}],
+          "mutexes": ["RageESPMutex"],
+          "strings": [
+            {"value": "RageESP", "type": "watermark"},
+            {"value": "ESP_DrawBoxes", "type": "export_name"},
+            {"value": "ESP_DrawNames", "type": "export_name"}
+          ]
+        },
+        {
+          "name": "RageMP Resource Dumper",
+          "aliases": ["RMPDumper"],
+          "type": "dumper",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["rmp_dumper.exe"],
+          "modules": [],
+          "windows": [{"title": "RageMP Dumper", "class": null, "overlay": false}],
+          "mutexes": ["RageDumperMutex"],
+          "strings": [
+            {"value": "RageMP Dumper", "type": "watermark"},
+            {"value": "RMP_DUMP", "type": "general"},
+            {"value": "DumpClientScript", "type": "export_name"}
+          ],
+          "file_paths": [
+            "%USERPROFILE%\\Desktop\\rmp_dump\\",
+            "%TEMP%\\rmp_dump\\"
+          ]
+        }
+      ]
+    },
+    "altv": {
+      "display_name": "alt:V",
+      "target_processes": ["altv.exe"],
+      "cheats": [
+        {
+          "name": "AltV Cheat Suite",
+          "aliases": ["ACS"],
+          "type": "menu",
+          "paid": true,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["altv_cheat.exe"],
+          "modules": ["altv_cheat.dll"],
+          "windows": [
+            {"title": "AltV Cheat Suite", "class": "ACSWnd", "overlay": false},
+            {"title": "ACS", "class": null, "overlay": true}
+          ],
+          "mutexes": ["AltVCheatMutex"],
+          "strings": [
+            {"value": "AltV Cheat Suite", "type": "watermark"},
+            {"value": "ACS v", "type": "watermark"},
+            {"value": "ACS_Init", "type": "export_name"},
+            {"value": "altv_hook", "type": "general"}
+          ],
+          "file_paths": ["%APPDATA%\\AltVCheat\\"],
+          "network": [{"type": "domain", "value": "altv-cheat.net"}]
+        },
+        {
+          "name": "AltV Bypass",
+          "aliases": ["altv_bypass", "alt-bypass"],
+          "type": "bypass",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["altv_bypass.exe"],
+          "modules": ["altv_bypass.dll"],
+          "windows": [{"title": "AltV Bypass", "class": "AltVBypassWnd", "overlay": false}],
+          "mutexes": ["AltVBypassMutex"],
+          "strings": [
+            {"value": "AltV Bypass", "type": "watermark"},
+            {"value": "altv_bypass", "type": "general"},
+            {"value": "bypass_altv", "type": "general"},
+            {"value": "altv_integrity_patch", "type": "general"},
+            {"value": "PatchIntegrityCheck", "type": "export_name"},
+            {"value": "altv.exe", "type": "general"},
+            {"value": "alt-v.mp", "type": "general"}
+          ],
+          "file_paths": ["%TEMP%\\altv_bypass_"],
+          "network": [{"type": "domain", "value": "altv-bypass.xyz"}]
+        },
+        {
+          "name": "AltV Resource Dumper",
+          "aliases": ["altvdumper", "AltVDump"],
+          "type": "dumper",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["altv_dumper.exe"],
+          "modules": ["altv_dumper.dll"],
+          "windows": [{"title": "AltV Dumper", "class": null, "overlay": false}],
+          "mutexes": ["AltVDumperMutex"],
+          "strings": [
+            {"value": "AltV Dumper", "type": "watermark"},
+            {"value": "altv_dump", "type": "general"},
+            {"value": "DumpJS", "type": "export_name"},
+            {"value": "DumpResource", "type": "export_name"},
+            {"value": "ALTV_DUMP_", "type": "general"}
+          ],
+          "file_paths": [
+            "%USERPROFILE%\\Desktop\\altv_dump\\",
+            "%TEMP%\\altv_dump\\"
+          ],
+          "network": [{"type": "domain", "value": "altvdumper.net"}]
+        },
+        {
+          "name": "V8 Injector",
+          "aliases": ["altv_v8inject"],
+          "type": "script",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": ["v8_injector.exe"],
+          "modules": ["v8inject.dll"],
+          "windows": [{"title": "V8 Injector", "class": null, "overlay": false}],
+          "mutexes": ["V8InjectMutex"],
+          "strings": [
+            {"value": "V8 Injector", "type": "watermark"},
+            {"value": "v8inject", "type": "general"},
+            {"value": "InjectJS", "type": "export_name"},
+            {"value": "eval(", "type": "general"},
+            {"value": "alt.emit(", "type": "general"},
+            {"value": "alt.Player.local", "type": "general"}
+          ],
+          "file_paths": ["%APPDATA%\\v8inject\\"]
+        },
+        {
+          "name": "AltV ESP",
+          "aliases": ["altvesp"],
+          "type": "esp",
+          "paid": false,
+          "status": "active",
+          "confidence": "confirmed",
+          "processes": [],
+          "modules": ["altvesp.dll"],
+          "windows": [{"title": "AltV ESP", "class": null, "overlay": true}],
+          "mutexes": ["AltVESPMutex"],
+          "strings": [
+            {"value": "AltV ESP", "type": "watermark"},
+            {"value": "altvesp", "type": "general"},
+            {"value": "DrawBoxESP", "type": "export_name"},
+            {"value": "DrawNameESP", "type": "export_name"},
+            {"value": "ESP_Enabled", "type": "config_key"}
+          ]
+        }
+      ]
+    },
+    "common": {
+      "display_name": "Plattformübergreifend",
+      "description": "Tools die bei FiveM, RageMP und AltV eingesetzt werden",
+      "tools": [
+        {
+          "name": "Xenos Injector",
+          "aliases": ["Xenos"],
+          "type": "injector",
+          "paid": false,
+          "processes": ["xenos.exe", "xenos64.exe"],
+          "modules": ["xenos.dll"],
+          "windows": [
+            {"title": "Xenos", "class": "XenosWnd", "overlay": false},
+            {"title": "Xenos Injector", "class": null, "overlay": false}
+          ],
+          "strings": [
+            {"value": "Xenos", "type": "watermark"},
+            {"value": "ManualMap", "type": "gui_label"},
+            {"value": "ThreadHijack", "type": "gui_label"}
+          ],
+          "file_paths": ["%TEMP%\\xenos_"]
+        },
+        {
+          "name": "Extreme Injector",
+          "aliases": ["ExtremeInject", "EI"],
+          "type": "injector",
+          "paid": false,
+          "processes": ["ExtremeInjector.exe", "ExtremeInjectorv3.exe"],
+          "modules": [],
+          "windows": [
+            {"title": "Extreme Injector", "class": "EIWnd", "overlay": false},
+            {"title": "Extreme Injector v3", "class": null, "overlay": false}
+          ],
+          "strings": [
+            {"value": "Extreme Injector", "type": "watermark"},
+            {"value": "Manual Mapping", "type": "gui_label"},
+            {"value": "Thread Hijacking", "type": "gui_label"},
+            {"value": "Kernel Injection", "type": "gui_label"}
+          ],
+          "file_paths": ["%APPDATA%\\Extreme Injector\\"]
+        },
+        {
+          "name": "Cheat Engine",
+          "aliases": ["CE", "CheatEngine"],
+          "type": "trainer",
+          "paid": false,
+          "processes": [
+            "cheatengine-x86_64.exe",
+            "cheatengine.exe",
+            "Cheat Engine.exe"
+          ],
+          "modules": ["cheatengine-x86_64.dll", "vehdebug-x86_64.dll"],
+          "windows": [
+            {"title": "Cheat Engine", "class": "CEWnd", "overlay": false},
+            {"title": "Cheat Engine 7", "class": null, "overlay": false},
+            {"title": "Cheat Engine 6", "class": null, "overlay": false},
+            {"title": "Memory Scanner", "class": null, "overlay": false}
+          ],
+          "strings": [
+            {"value": "Cheat Engine", "type": "watermark"},
+            {"value": "DBVM", "type": "general"},
+            {"value": "lua_State", "type": "general"},
+            {"value": "ceDriver", "type": "general"},
+            {"value": "dbk64.sys", "type": "general"},
+            {"value": "dbk32.sys", "type": "general"}
+          ],
+          "file_paths": [
+            "%APPDATA%\\Cheat Engine\\",
+            "%USERPROFILE%\\Documents\\My Cheat Tables\\",
+            "dbk64.sys",
+            "dbk32.sys"
+          ],
+          "registry": [
+            {"key": "HKCU\\Software\\Cheat Engine", "value": "LastProcess"},
+            {"key": "HKCU\\Software\\Cheat Engine", "value": "Version"}
+          ],
+          "memory_patterns": [
+            {
+              "pattern": "43 68 65 61 74 45 6E 67 69 6E 65",
+              "type": "string_ref",
+              "description": "ASCII 'CheatEngine' im Speicher"
+            }
+          ]
+        },
+        {
+          "name": "x64dbg",
+          "aliases": ["x32dbg"],
+          "type": "injector",
+          "paid": false,
+          "processes": ["x64dbg.exe", "x32dbg.exe"],
+          "modules": [],
+          "windows": [
+            {"title": "x64dbg", "class": "Qt5QWindowIcon", "overlay": false},
+            {"title": "x32dbg", "class": "Qt5QWindowIcon", "overlay": false}
+          ],
+          "strings": [
+            {"value": "x64dbg", "type": "watermark"},
+            {"value": "x32dbg", "type": "watermark"},
+            {"value": "x64dbg.ini", "type": "general"}
+          ],
+          "file_paths": ["%APPDATA%\\x64dbg\\", "x64dbg.ini"]
+        },
+        {
+          "name": "Process Hacker",
+          "aliases": ["PH", "ProcessHacker2", "System Informer"],
+          "type": "injector",
+          "paid": false,
+          "processes": ["ProcessHacker.exe", "ProcessHacker2.exe", "systeminformer.exe"],
+          "modules": [],
+          "windows": [
+            {"title": "Process Hacker", "class": "ProcessHackerWnd", "overlay": false},
+            {"title": "System Informer", "class": null, "overlay": false}
+          ],
+          "strings": [
+            {"value": "Process Hacker", "type": "watermark"},
+            {"value": "System Informer", "type": "watermark"}
+          ]
+        },
+        {
+          "name": "GH Injector",
+          "aliases": ["GuardianHijack", "GHInject"],
+          "type": "injector",
+          "paid": false,
+          "processes": ["GHInjector-GUI.exe", "GHInjector-CLI.exe"],
+          "modules": ["GHInjector.dll"],
+          "windows": [{"title": "GH Injector", "class": "GHWnd", "overlay": false}],
+          "strings": [
+            {"value": "GuardianHijack", "type": "watermark"},
+            {"value": "GH Injector", "type": "watermark"}
+          ]
+        },
+        {
+          "name": "ScyllaHide",
+          "aliases": ["Scylla"],
+          "type": "bypass",
+          "paid": false,
+          "processes": ["ScyllaHide.exe"],
+          "modules": ["ScyllaHide.dll", "ScyllaHideInjector.dll"],
+          "windows": [{"title": "ScyllaHide", "class": null, "overlay": false}],
+          "strings": [
+            {"value": "ScyllaHide", "type": "watermark"},
+            {"value": "NtSetInformationThread", "type": "general"},
+            {"value": "NtQueryInformationProcess", "type": "general"}
+          ],
+          "file_paths": ["%APPDATA%\\ScyllaHide\\"],
+          "memory_patterns": [
+            {
+              "pattern": "E8 ?? ?? ?? ?? 85 C0 74 ?? C7 45",
+              "type": "code",
+              "target_module": "ntdll.dll",
+              "description": "ScyllaHide NtQuery Hook Pattern"
+            }
+          ]
+        },
+        {
+          "name": "BE Bypass",
+          "aliases": ["BattleEyeBypass", "BEBypass"],
+          "type": "bypass",
+          "paid": false,
+          "modules": ["be_bypass.dll"],
+          "strings": [
+            {"value": "BattlEye Bypass", "type": "watermark"},
+            {"value": "be_bypass", "type": "general"},
+            {"value": "BEService", "type": "general"},
+            {"value": "BEClient.dll", "type": "general"}
+          ],
+          "memory_patterns": [
+            {
+              "pattern": "42 45 43 6C 69 65 6E 74",
+              "type": "string_ref",
+              "description": "ASCII 'BEClient' im Speicher"
+            }
+          ]
+        },
+        {
+          "name": "EAC Bypass",
+          "aliases": ["EasyAntiCheatBypass"],
+          "type": "bypass",
+          "paid": false,
+          "modules": ["eac_bypass.dll"],
+          "strings": [
+            {"value": "EAC Bypass", "type": "watermark"},
+            {"value": "easyanticheat", "type": "general", "case_sensitive": false},
+            {"value": "EasyAntiCheat.sys", "type": "general"}
+          ],
+          "memory_patterns": [
+            {
+              "pattern": "45 61 73 79 41 6E 74 69 43 68 65 61 74",
+              "type": "string_ref",
+              "description": "ASCII 'EasyAntiCheat' im Speicher"
+            }
+          ]
+        },
+        {
+          "name": "ImGui Overlay",
+          "aliases": ["ImGuiOverlay"],
+          "type": "esp",
+          "paid": false,
+          "modules": ["d3d11_hook.dll", "imgui_overlay.dll"],
+          "strings": [
+            {"value": "ImGui", "type": "general"},
+            {"value": "ImGui::Begin(", "type": "general"},
+            {"value": "Dear ImGui", "type": "general"},
+            {"value": "imgui.ini", "type": "general"}
+          ],
+          "file_paths": ["imgui.ini"],
+          "memory_patterns": [
+            {
+              "pattern": "48 89 5C 24 ?? 57 48 83 EC ?? 48 8B F9",
+              "type": "code",
+              "target_module": "d3d11.dll",
+              "description": "D3D11 Present Hook (ImGui)"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "quick_lookup": {
+    "all_processes": [
+      "eulen.exe", "eulen_loader.exe", "eulen_client.exe",
+      "lynx.exe", "lynx_loader.exe",
+      "midnight.exe",
+      "redengine.exe", "red_engine_loader.exe",
+      "hammafia.exe",
+      "nfive.exe", "nofivem.exe",
+      "oxiware.exe",
+      "stellar.exe",
+      "frostbite.exe",
+      "hydra.exe",
+      "eclipse.exe",
+      "cfx_dumper.exe", "fivem_dumper.exe",
+      "flawless.exe",
+      "haze.exe",
+      "rmp_cheat.exe", "rage_bypass.exe", "rageesp.exe", "rmp_dumper.exe",
+      "altv_cheat.exe", "altv_bypass.exe", "altvesp.exe", "altv_dumper.exe",
+      "v8_injector.exe", "cef_injector.exe",
+      "xenos.exe", "xenos64.exe",
+      "ExtremeInjector.exe", "ExtremeInjectorv3.exe",
+      "ProcessHacker.exe", "ProcessHacker2.exe", "systeminformer.exe",
+      "GHInjector-GUI.exe", "GHInjector-CLI.exe",
+      "cheatengine-x86_64.exe", "cheatengine.exe", "Cheat Engine.exe",
+      "x64dbg.exe", "x32dbg.exe",
+      "ReClass.NET.exe",
+      "ScyllaHide.exe",
+      "HxD.exe",
+      "fiddler.exe", "Fiddler.exe"
+    ],
+    "all_modules": [
+      "eulen.dll", "eulen_core.dll", "eulen_hook.dll",
+      "lynx.dll", "lynx_core.dll",
+      "midnight.dll",
+      "redengine.dll", "rengine.dll",
+      "hammafia.dll",
+      "oxiware.dll",
+      "stellar.dll",
+      "frostbite.dll",
+      "hydra.dll",
+      "eclipse.dll",
+      "flawless.dll",
+      "haze.dll",
+      "rmp_cheat.dll", "rage_bypass.dll", "rageesp.dll", "rageaimbot.dll", "ragespeed.dll",
+      "altv_cheat.dll", "altv_bypass.dll", "altvesp.dll", "altv_dumper.dll",
+      "v8inject.dll", "altv_noclip.dll", "altv_speed.dll", "altv_aimbot.dll", "cef_hook.dll",
+      "xenos.dll",
+      "GHInjector.dll",
+      "cheatengine-x86_64.dll", "vehdebug-x86_64.dll",
+      "ScyllaHide.dll", "ScyllaHideInjector.dll",
+      "d3d11_hook.dll", "imgui_overlay.dll", "d3dhook.dll", "dx11hook.dll",
+      "be_bypass.dll", "eac_bypass.dll",
+      "themida_unpack.dll", "vmp_bypass.dll"
+    ],
+    "all_domains": [
+      "eulen.pw", "auth.eulen.pw", "cdn.eulen.pw",
+      "lynxcheats.net", "auth.lynxcheats.net",
+      "midnight-cheats.com",
+      "redengine.xyz",
+      "hammafia.com",
+      "nfive.net",
+      "oxiware.com",
+      "stellarcheats.net",
+      "frostbite-cheats.com",
+      "hydra-cheats.net",
+      "flawless-cheats.com",
+      "hazecheats.net",
+      "rmpcheat.net",
+      "ragebypass.xyz",
+      "midnight-rage.com",
+      "altv-cheat.net",
+      "altv-bypass.xyz",
+      "altvdumper.net",
+      "altv-aimbot.com"
+    ]
+  }
+}
