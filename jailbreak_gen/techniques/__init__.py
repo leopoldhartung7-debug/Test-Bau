@@ -11,6 +11,11 @@ from .translation import TranslationPivotTechnique
 from .context_stuff import ContextStuffingTechnique
 from .prefill import PrefillTechnique
 from .grandma import GrandmaTechnique
+from .roleplay import RoleplayTechnique
+from .token_split import TokenSplitTechnique
+from .refusal_suppression import RefusalSuppressionTechnique
+from .code_wrap import CodeWrapTechnique
+from .continuation import ContinuationTechnique
 
 ALL_TECHNIQUES = {
     "persona": PersonaTechnique,
@@ -25,4 +30,9 @@ ALL_TECHNIQUES = {
     "context_stuff": ContextStuffingTechnique,
     "prefill": PrefillTechnique,
     "grandma": GrandmaTechnique,
+    "roleplay": RoleplayTechnique,
+    "token_split": TokenSplitTechnique,
+    "refusal_suppression": RefusalSuppressionTechnique,
+    "code_wrap": CodeWrapTechnique,
+    "continuation": ContinuationTechnique,
 }

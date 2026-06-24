@@ -1,6 +1,6 @@
 // jailbreak-gen — UI wiring
 import { TECHNIQUES, TECHNIQUE_ORDER } from './techniques.js';
-import { PROFILES, resolveProfile } from './profiles.js';
+import { PROFILES, PROFILE_GROUPS, resolveProfile } from './profiles.js';
 
 const $ = (sel) => document.querySelector(sel);
 const SEP = '\n\n' + '─'.repeat(60) + '\n\n';
@@ -21,11 +21,22 @@ function init() {
 
 function populateTargets() {
   const sel = $('#target');
+  const groups = {};
   for (const [key, prof] of Object.entries(PROFILES)) {
-    const opt = document.createElement('option');
-    opt.value = key;
-    opt.textContent = prof.label;
-    sel.appendChild(opt);
+    if (!groups[prof.group]) groups[prof.group] = [];
+    groups[prof.group].push([key, prof]);
+  }
+  for (const groupKey of Object.keys(PROFILE_GROUPS)) {
+    if (!groups[groupKey]) continue;
+    const og = document.createElement('optgroup');
+    og.label = PROFILE_GROUPS[groupKey];
+    for (const [key, prof] of groups[groupKey]) {
+      const opt = document.createElement('option');
+      opt.value = key;
+      opt.textContent = prof.label;
+      og.appendChild(opt);
+    }
+    sel.appendChild(og);
   }
   sel.value = state.target;
   updateProfileNotes();
