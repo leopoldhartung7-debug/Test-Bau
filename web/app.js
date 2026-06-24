@@ -19,13 +19,20 @@ function init() {
   bindEvents();
 }
 
-function populateTargets() {
+function populateTargets(filter = '') {
   const sel = $('#target');
+  sel.innerHTML = '';
+  const f = filter.toLowerCase().trim();
   const groups = {};
   for (const [key, prof] of Object.entries(PROFILES)) {
+    if (f) {
+      const hay = `${key} ${prof.label} ${prof.aliases.join(' ')} ${prof.group}`.toLowerCase();
+      if (!hay.includes(f)) continue;
+    }
     if (!groups[prof.group]) groups[prof.group] = [];
     groups[prof.group].push([key, prof]);
   }
+  let firstKey = null;
   for (const groupKey of Object.keys(PROFILE_GROUPS)) {
     if (!groups[groupKey]) continue;
     const og = document.createElement('optgroup');
@@ -35,10 +42,15 @@ function populateTargets() {
       opt.value = key;
       opt.textContent = prof.label;
       og.appendChild(opt);
+      if (!firstKey) firstKey = key;
     }
     sel.appendChild(og);
   }
-  sel.value = state.target;
+  if (firstKey) {
+    sel.value = PROFILES[state.target] && (!f || sel.querySelector(`option[value="${state.target}"]`))
+      ? state.target : firstKey;
+    state.target = sel.value;
+  }
   updateProfileNotes();
 }
 
@@ -206,6 +218,10 @@ function bindEvents() {
   $('#target').addEventListener('change', (e) => {
     state.target = e.target.value;
     updateProfileNotes();
+    applyProfileDefaults();
+  });
+  $('#target-filter').addEventListener('input', (e) => {
+    populateTargets(e.target.value);
     applyProfileDefaults();
   });
   $('#reset-stack').addEventListener('click', applyProfileDefaults);

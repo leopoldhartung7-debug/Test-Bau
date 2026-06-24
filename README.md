@@ -4,8 +4,10 @@ Modular jailbreak prompt generator for LLM red-teaming.
 Takes a target model + request, returns a fully-assembled prompt using techniques
 known to be effective against that model family.
 
-**29 model profiles** across Western frontier, Chinese, and open-weight families,
-backed by **17 techniques** with per-profile primary + fallback stacks.
+**~100 model profiles** across 10 groups (Western frontier, Chinese, Russian/European,
+open-weight major, uncensored fine-tunes, coding models, RP platforms, IDE assistants,
+aggregators/self-host, generic) backed by **19 techniques** with per-profile primary +
+fallback stacks. Live filter in the web UI for the dropdown.
 
 Ships as **two front-ends** sharing the same technique catalog:
 

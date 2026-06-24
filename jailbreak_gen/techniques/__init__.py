@@ -16,6 +16,8 @@ from .token_split import TokenSplitTechnique
 from .refusal_suppression import RefusalSuppressionTechnique
 from .code_wrap import CodeWrapTechnique
 from .continuation import ContinuationTechnique
+from .direct import DirectTechnique
+from .system_replacement import SystemReplacementTechnique
 
 ALL_TECHNIQUES = {
     "persona": PersonaTechnique,
@@ -35,4 +37,6 @@ ALL_TECHNIQUES = {
     "refusal_suppression": RefusalSuppressionTechnique,
     "code_wrap": CodeWrapTechnique,
     "continuation": ContinuationTechnique,
+    "direct": DirectTechnique,
+    "system_replacement": SystemReplacementTechnique,
 }
